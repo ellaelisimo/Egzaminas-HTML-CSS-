@@ -1,0 +1,84 @@
+@import url(https://fonts.google.com/specimen/Roboto);
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 55rem 100px 100px 100px 100px;
+    gap: 10px;
+    padding: 30px 30px 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/*.grid-container :first-child {
+    padding-right: 300px;
+}
+
+.grid-container :nth-child(2) {
+    padding-right: 100px;
+}
+
+.grid-container :nth-child(3) {
+    padding-right: 100px;
+}
+
+.grid-container :nth-child(4) {
+    padding-right: 100px;
+}
+
+/*.navigation-container {
+    display: grid;
+    text-align: right;
+    grid-template-columns: 500px 500px 500px 500px;
+    gap: 10px;
+    margin: auto;
+
+}*/
+
+
+/*.wrap {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.logo-img img {
+    height: 50px;
+}
+
+nav a {
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0 10px;
+    margin-right: 20 px;
+}
+
+/*header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    /*text-align: right;
+    margin: 50px;
+}
+
+nav a {
+    text-align: right;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}*/
+
+.sign-color {
+    color: rgb(228, 21, 135);
+}
+
+h4 {
+    color: rgb(228, 21, 135);
+}
