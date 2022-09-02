@@ -2,13 +2,13 @@
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 30px;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 55rem 100px 100px 100px 100px;
     gap: 10px;
-    padding: 30px 30px 30px;
 }
 
 nav a {
@@ -16,69 +16,186 @@ nav a {
     color: black;
 }
 
-/*.grid-container :first-child {
-    padding-right: 300px;
-}
-
-.grid-container :nth-child(2) {
-    padding-right: 100px;
-}
-
-.grid-container :nth-child(3) {
-    padding-right: 100px;
-}
-
-.grid-container :nth-child(4) {
-    padding-right: 100px;
-}
-
-/*.navigation-container {
+.grid-main-container {
     display: grid;
-    text-align: right;
-    grid-template-columns: 500px 500px 500px 500px;
-    gap: 10px;
-    margin: auto;
-
-}*/
+    grid-template-columns: auto auto;
+    padding-top: 100px;
 
 
-/*.wrap {
-    max-width: 960px;
-    margin: 0 auto;
 }
 
-.logo-img img {
-    height: 50px;
+.grid-main-container img {
+    height: 550px;
+    padding-right: 60px;
 }
 
-nav a {
-    font-size: 1rem;
-    text-decoration: none;
-    padding: 0 10px;
-    margin-right: 20 px;
+.grid-main-container h1 {
+    font-size: 100px;
+    margin: 0;
 }
 
-/*header {
-    height: 100px;
+.box {
+    width: 550px;
+
+}
+
+.button-gradient {
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.btn {
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    position: relative;
+    border-radius: 30px;
+    background: linear-gradient(to right, #ff00aa, #ff711f);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    background-color: white;
+    border-radius: 26px;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.btn::after {
+    content: attr(data);
+    font-size: 16px;
+    background: black;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.background-img {
+    position: relative;
+
+}
+
+.heading-img {
+    position: absolute;
+    bottom: 100px;
+    left: 70px;
+    font-size: 30px;
+}
+
+.text-img {
+    position: absolute;
+    bottom: 70px;
+    left: 70px;
+    font-size: 20px;
+}
+
+.flex-companies {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-    /*text-align: right;
-    margin: 50px;
+    padding-top: 100px;
 }
 
-nav a {
-    text-align: right;
-    text-decoration: none;
-    color: black;
-    padding: 15px;
-}*/
+div>h2 {
+    padding-top: 100px;
+}
+
+.lined-text {
+    text-decoration: underline;
+}
+
 
 .sign-color {
     color: rgb(228, 21, 135);
 }
 
-h4 {
+.box>h4 {
     color: rgb(228, 21, 135);
+}
+
+.grey-foto-conteiner {
+    width: 250px;
+    height: 350px;
+    background-color: rgb(240, 230, 230);
+    border-radius: 15px;
+}
+
+.ntf-img {
+    width: 250px;
+}
+
+.orange-text {
+    color: orange;
+    font-size: 11px;
+    position: absolute;
+    padding: 20px;
+}
+
+.second-text-grey {
+    font-size: 16px;
+    padding: 20px;
+    position: absolute;
+    font-weight: bold;
+}
+
+.third-text-grey {
+    color: grey;
+    position: absolute;
+    padding: 67px 20px;
+}
+
+.top-bid-grey {
+    color: grey;
+    font-size: 11px;
+    position: absolute;
+    padding: 20px 195px;
+}
+
+.cost {
+    font-size: 16px;
+    position: absolute;
+    font-weight: bold;
+    padding: 20px 170px;
+}
+
+.sixth-text-grey {
+    color: grey;
+    position: absolute;
+    padding: 67px 170px;
+}
+
+.grey-foto-conteiner-2 {
+    width: 250px;
+    height: 350px;
+    background-color: rgb(240, 230, 230);
+    border-radius: 15px;
+}
+
+.grey-foto-conteiner-3 {
+    width: 250px;
+    height: 350px;
+    background-color: rgb(240, 230, 230);
+    border-radius: 15px;
+}
+
+.grey-foto-conteiner-4 {
+    width: 250px;
+    height: 350px;
+    background-color: rgb(240, 230, 230);
+    border-radius: 15px;
+}
+
+.flex-foto {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
 }
