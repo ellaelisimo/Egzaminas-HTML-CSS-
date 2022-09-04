@@ -2,14 +2,42 @@
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-top: 30px;
 }
 
-.grid-container {
+/*.grid-container {
     display: grid;
     grid-template-columns: 55rem 100px 100px 100px 100px;
     gap: 10px;
+}*/
+/*.grid-container {
+    display: flex;
+    flex
+}*/
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.logo-img {
+    display: inline-block;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding-right: 10px;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+}
+
 
 nav a {
     text-decoration: none;
@@ -20,8 +48,6 @@ nav a {
     display: grid;
     grid-template-columns: auto auto;
     padding-top: 100px;
-
-
 }
 
 .grid-main-container img {
@@ -36,15 +62,14 @@ nav a {
 
 .box {
     width: 550px;
-
 }
 
 .button-gradient {
-    height: 30vh;
-    width: 100vw;
-    display: flex;
+    height: 10vh;
+    width: 20vw;
     justify-content: left;
     align-items: center;
+    padding-top: 20px;
 }
 
 .btn {
@@ -81,7 +106,7 @@ nav a {
 
 .background-img {
     position: relative;
-
+    margin-right: 100px;
 }
 
 .heading-img {
@@ -102,6 +127,7 @@ nav a {
     display: flex;
     justify-content: space-between;
     padding-top: 100px;
+    padding-right: 20px;
 }
 
 div>h2 {
@@ -121,81 +147,140 @@ div>h2 {
     color: rgb(228, 21, 135);
 }
 
-.grey-foto-conteiner {
-    width: 250px;
+.conteiner-grey {
+    width: 255px;
     height: 350px;
-    background-color: rgb(240, 230, 230);
     border-radius: 15px;
+    background-color: rgb(223, 213, 213);
+    margin-top: 50px;
 }
 
-.ntf-img {
-    width: 250px;
+.nft-img {
+    width: 255px;
 }
 
-.orange-text {
-    color: orange;
+.conteiner-grey-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 14px 3px 14px;
+}
+
+.all-conteiner-text {
+    margin: 10px;
+}
+
+.gloop-series {
+    color: rgb(209, 138, 6);
     font-size: 11px;
-    position: absolute;
-    padding: 20px;
 }
 
-.second-text-grey {
+.top-bid {
+    font-size: 11px;
+    color: grey;
+}
+
+.name-guy {
     font-size: 16px;
-    padding: 20px;
-    position: absolute;
     font-weight: bold;
 }
 
-.third-text-grey {
-    color: grey;
-    position: absolute;
-    padding: 67px 20px;
-}
-
-.top-bid-grey {
-    color: grey;
-    font-size: 11px;
-    position: absolute;
-    padding: 20px 195px;
+.sims {
+    padding-left: 25px;
 }
 
 .cost {
     font-size: 16px;
-    position: absolute;
     font-weight: bold;
-    padding: 20px 170px;
 }
 
-.sixth-text-grey {
+.bid-number {
     color: grey;
-    position: absolute;
-    padding: 67px 170px;
 }
 
-.grey-foto-conteiner-2 {
-    width: 250px;
-    height: 350px;
-    background-color: rgb(240, 230, 230);
-    border-radius: 15px;
+.day-left {
+    color: grey;
 }
 
-.grey-foto-conteiner-3 {
-    width: 250px;
-    height: 350px;
-    background-color: rgb(240, 230, 230);
-    border-radius: 15px;
-}
-
-.grey-foto-conteiner-4 {
-    width: 250px;
-    height: 350px;
-    background-color: rgb(240, 230, 230);
-    border-radius: 15px;
-}
-
-.flex-foto {
+.conteiner-box {
     display: flex;
-    flex-wrap: nowrap;
+    padding-right: 10px;
     justify-content: space-between;
+    margin-bottom: 100px;
+}
 
+.footer-container {
+    display: flex;
+    padding-top: 70px;
+}
+
+.footer-container-item-1 {
+    padding-right: 600px;
+}
+
+.exclusive-nft {
+    color: grey;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 10px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: transparent;
+    color: grey;
+}
+
+.fa-twitter {
+    background: transparent;
+    color: grey;
+}
+
+.fa-instagram {
+    background: transparent;
+    color: grey;
+}
+
+.heading-footer {
+    color: grey;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 8px;
+}
+
+footer a {
+    font-size: 12px;
+    text-decoration: none;
+    color: grey;
+    padding: 2px;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-end {
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+@media (max-width:768px) {
+    body {
+        width: auto
+    }
 }
